@@ -31,32 +31,47 @@ html {
   margin: 0;
 }
 
-.polaroid:first-child {
-  transform: rotate(-20deg);
-  position: absolute;
-  top: 40%;
-  left: 42%;
+.polaroid:nth-child(1) {
+  transform: rotate(-15deg) translate(152px, 150px);
+
+  /* position: absolute;
+  top: 60%;
+  left: 20%; */
   z-index: 1;
 }
 
 .polaroid:nth-child(2) {
-  transform: rotate(5deg);
-  position: absolute;
-  top: 45%;
-  left: 48%;
+  transform: rotate(5deg) translate(315px, 120px);
+
+  /* position: absolute;
+  top: 65%;
+  left: 28%; */
   z-index: 3;
 }
 
-.polaroid:last-of-type {
-  transform: rotate(28deg);
-  position: absolute;
-  top: 39%;
-  left: 55%;
+.polaroid:nth-child(3) {
+  transform: rotate(29deg) translate(385px, -105px);
+
+  /* position: absolute;
+  top: 59%;
+  left: 35%; */
   z-index: 2;
 }
 
-.polaroid:hover {
+.polaroid:hover:nth-child(1) {
   box-shadow: 2px 6px 15px rgba(0, 0, 0, 1);
-  transform: rotate(0deg);
+  transform: rotate(0deg) translate(152px, 150px);
+  z-index: 4;
+}
+
+.polaroid:hover:nth-child(2) {
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 1);
+  transform: rotate(0deg) translate(315px, 120px);
+  z-index: 4;
+}
+
+.polaroid:hover:nth-child(3) {
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 1);
+  transform: rotate(0deg) translate(385px, -105px);
   z-index: 4;
 }
